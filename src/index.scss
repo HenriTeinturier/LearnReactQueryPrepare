@@ -1,0 +1,28 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F7F8F9;
+  color: #424958;
+  // font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+select,
+input,
+button {
+  border: none;
+  background-color: transparent;
+}
+
+
+a,
+a:focus,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
