@@ -41,10 +41,16 @@ export const VideoGameDetail = () => {
             {videoGame.tag}
           </div>
           <div className={`comment`}>
+            <div className="title">
+              Mon avis:
+            </div>
+            <div style={{flexGrow: 0}}>
             {videoGame.comment}
+
+            </div>
           </div>
           <div className={`noteWrapper`}>
-          <div>Ma note:</div>
+          <div className="title">Ma note:</div>
           <div className="note">{videoGame.note}</div>
           </div>
 

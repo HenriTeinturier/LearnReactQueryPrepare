@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Half-life 2",
       "tag": "pc",
-      "note": 10,
+      "note": "10",
       "comment": "Très bonne ambiance",
       "image": "https://image.jeuxvideo.com/images-sm/pc/h/l/hlf2pc0f.jpg"
     },
@@ -167,14 +167,6 @@
       "comment": "Top surtout à deux.",
       "image": "https://cdn.mobygames.com/covers/5904916-lotus-esprit-turbo-challenge-amiga-front-cover.jpg",
       "id": 21
-    },
-    {
-      "name": "dsf",
-      "tag": "sony",
-      "note": "sdf",
-      "comment": "sdf",
-      "image": "sdf",
-      "id": 22
     }
   ]
 }

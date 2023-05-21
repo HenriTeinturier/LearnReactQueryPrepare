@@ -185,6 +185,7 @@ nav {
         align-items: center;
         justify-content: center;
         margin: 0px 8px;
+        margin-right: 32px;
   
         
       
@@ -209,10 +210,10 @@ nav {
         }
       }
   
-      .gameDelete {
+      .gameIcon {
         display: flex;
         align-items: center;
-        margin-left: 24px;
+        margin-left: 0px;
         padding: 6px;
         border-radius: 24px;
         transition: 0.3s;
@@ -301,9 +302,27 @@ nav {
     .buttonWrapper {
       display: flex;
       align-items: flex-end;
+      margin-right: 12px;
 
       .addButton {
         background-color: #ff4154da;
+        height: 33px;
+        margin: none;
+        width: 100px;
+        border-radius: 6px;
+        
+        cursor: pointer;
+        &:hover {
+          transition: 0.5s;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        &:active {
+          background-color: #f3b564;
+          transition: 0s;
+        }
+      }
+      .cancelButton {
+        background-color: #adb5bd;
         height: 33px;
         margin: none;
         width: 100px;
@@ -387,14 +406,26 @@ nav {
 
       .comment {
         // background-color: #0070D1;
+        // display: flex;
         color: #757575;
         min-height: 150px;
+
+        .title {
+          text-decoration: underline;
+          margin-bottom: 4px;
+        }
+
+        
       }
 
       .noteWrapper {
         display: flex;
         // justify-content: flex-end;
         align-items: center;
+
+        .title {
+          text-decoration: underline;
+        }
         .note {
           margin-left: 12px;
           font-size: 32px;

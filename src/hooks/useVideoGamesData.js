@@ -12,9 +12,15 @@ const addVideoGame = async (videoGame) => {
   return axios.post(`http://localhost:3900/videoGames`, videoGame);
 };
 
-const deleteSuperHero = async (videoGameId) => {
+const deleteVideoGame = async (videoGameId) => {
   return axios.delete(`http://localhost:3900/videoGames/${videoGameId}`);
 }
+
+const editVideoGame = async (videoGame) => {
+  return axios.put(`http://localhost:3900/videoGames/${videoGame.id}`, videoGame)
+}
+
+
 
 
 export const useVideoGamesData = (onSuccess, onError) => {
@@ -40,10 +46,23 @@ export const useAddVideoGamesData = () => {
   )
 }
 
+export const useEditVideoGame = () => {
+  console.log('edit mode')
+  const queryClient = useQueryClient();
+  return useMutation(
+    editVideoGame,
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries('video-games')
+      }
+    }
+  )
+}
+
 export const useDeleteVideoGame = () => {
   const queryClient = useQueryClient();
   return useMutation(
-    deleteSuperHero,
+    deleteVideoGame,
     {
       onSuccess: () => {
         queryClient.invalidateQueries('video-games');
